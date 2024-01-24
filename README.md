@@ -19,3 +19,5 @@
 ```
 AWS CLI와 EB CLI는 파이썬 기반으로 작동한다. 따라서 파이썬 3을 설치한다.
 ```
+## AWS CLI 설치
+[AWS CLI 설치](https://awscli.amazonaws.com/AWSCLIV2.msi)
