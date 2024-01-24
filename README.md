@@ -56,8 +56,32 @@ Default output format [None] : json
 Default region name : AWS 데이터 센터가 있는 장소의 이름을 뜻하는 데 서비스를 실제로 사용할 사용자와        
 서비스가 호스팅되고 있는 데이터 센터가 가까울수록 네트워크 대기 시간이 짧아진다.    
 한국에 사용자가 거주할 확률이 높아서 ap-northeast-2를 선택하였다.   
+## pip를 이용한 EB CLI 설치
+![image](https://github.com/mr-won/AWS/assets/58906858/729771db-19d6-47ed-98a5-f18303a1e471)
+```cmd
+$ pip install awsebcli --upgrade --user
+```
+```
+AWS CLI는 AWS의 모든 서비스를 위한 CLI이다. 따라서 AWS CLI를 사용하면 EC2, 로드 밸런서, 오토 스케일링 그룹,
+라우트 53, 다이나모 DB 등등 AWS의 모든 서비스를 이용할 수 있다.
 
+반면 지금 설치한 EB CLI는 일래스틱 빈스톡만을 위한 CLI이다. 이 CLI로는 일래스틱 빈스톡 환경을 구축하고 설정할 수 있다.
+```
+![image](https://github.com/mr-won/AWS/assets/58906858/ec8831ee-ea2a-4c9f-b7ae-8a7136cee89d)
+```
+윈도우 운영체제인 경우 스크립트 경로가 PATH에 없다는 경고문을 볼 수 있다.
+```
 
+## 윈도우 사용자를 위한 EB CLI 환경 변수 설정
+![image](https://github.com/mr-won/AWS/assets/58906858/1ca5c70e-ed74-4272-8928-a73a181d370e)
+```
+시스템 변수 환경 설정에서 새로만들기를 클릭하고 $USERPROFILE%\AppData\Roaming\Python\Python39\Scripts를
+추가하고 확인을 누른다.
+
+$ eb --version 커맨드로 eb cli 설치를 확인하였다.
+
+배포를 위한 사전 작업으로 AWS 툴을 설치, AWS를 사용하기 위해 파이썬을 설치하고 AWS CLI를 pip를 이용하여 설치하였다.
+```
 
 
 
